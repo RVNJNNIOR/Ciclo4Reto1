@@ -35,7 +35,7 @@ public class UserController {
      *
      * @return
      */
-    @GetMapping("/")
+    @GetMapping("/all")
     public List<User>getAll(){
         return userService.getAll();
     }
@@ -45,7 +45,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @PostMapping("/all")
+    @PostMapping("/new")
     @ResponseStatus(HttpStatus.CREATED)
     public User registrar(@RequestBody User user){
         return userService.registrar(user);
