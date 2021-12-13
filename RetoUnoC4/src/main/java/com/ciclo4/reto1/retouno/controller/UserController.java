@@ -35,7 +35,7 @@ public class UserController {
      *
      * @return
      */
-    @GetMapping("/all")
+    @GetMapping("/")
     public List<User>getAll(){
         return userService.getAll();
     }
