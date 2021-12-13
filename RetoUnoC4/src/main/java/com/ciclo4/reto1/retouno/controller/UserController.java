@@ -44,7 +44,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @PostMapping("/new")
+    @PostMapping("/all")
     @ResponseStatus(HttpStatus.CREATED)
     public User registrar(@RequestBody User user){
         return userService.registrar(user);
